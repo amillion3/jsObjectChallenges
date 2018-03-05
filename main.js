@@ -97,21 +97,12 @@ var ages = [30,40];
 //Output:  { 'fred': 30, 'barney': 40 }
 
 var hulkSmash = {};
-
-for (var l = 0; l < names.length; l++) {
-  var tempName = names[l];
-  var tempAge = ages[l];
-
-  function zipObject(a,b) {
-    a:b;
-  }
-
-  hulkSmash += zipObject(tempName,tempAge);
+for (i = 0; i < names.length; i++) {
+  hulkSmash[names[i]] = ages[i];
 }
 
-
-
-console.log(hulkSmash);
+document.getElementById("objChallenge4").innerHTML = "<h3>Challenge 4</h3>" +
+"<p>" + JSON.stringify(hulkSmash) + "</p>";
 
 // --------------------------------------
 // --Challenge 5-------------------------
