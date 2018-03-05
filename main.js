@@ -98,4 +98,24 @@ document.getElementById("objChallenge3").innerHTML = "<h3>" + challenge3Answer +
 // --Challenge 5-------------------------
 // --------------------------------------
 // The company Strive is looking for a new developer. Given a candidates minSalary and a jobs maxSalary determine if the company can affort the candidate. The Company will only accept candidates that have a minSalary that is at least 10% less than the jobs maxSalary. If the candidate matches display true otherwise display false.
+// var candidate1 = {
+//   minSalary: 120000
+// };
+// let job1 = {
+//   maxSalary: 140000
+// }
+//output is true.  this job can hire any minSalary less than $126,000
+var candidate1 = {
+  minSalary: 950000
+};
+let job1 = {
+  maxSalary: 100000
+}
+//output is false.  this job can hire any minSalary less than $90,000
 
+var hireThem = false;
+
+if (candidate1.minSalary <= (job1.maxSalary * 0.90) ) {
+  hireThem = true;
+}
+document.getElementById("objChallenge5").innerHTML = "<h3> Challenge 5: " + hireThem + "</h3>";
