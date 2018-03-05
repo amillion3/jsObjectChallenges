@@ -28,7 +28,7 @@ for (var j = 0; j < scoreArray.length; j++) {
       outputString = "False";
     }
 }
-document.getElementById("objChallenge1").innerHTML = "<h3>" + outputString + "</h3>";
+document.getElementById("objChallenge1").innerHTML = "<h3>Challenge 1</h3>" + "<p>" + outputString + "</p>";
 
 // --------------------------------------
 // --Challenge 2-------------------------
@@ -64,7 +64,7 @@ for (var k = 0; k < winnerList.length; k++) {
     winCount ++;
   }
 }
-document.getElementById("objChallenge2").innerHTML = "<h3>" + country + " won " + winCount + " times." + "</h3>";
+document.getElementById("objChallenge2").innerHTML = "<h3>Challenge 2</h3>" + "<p>" + country + " won " + winCount + " times." + "</p>";
 
 // --------------------------------------
 // --Challenge 3-------------------------
@@ -86,7 +86,7 @@ if (test1.operator === "add") {
 }else if (test1.operator === "divide") {
   challenge3Answer = test1.a / test1.b;
 }
-document.getElementById("objChallenge3").innerHTML = "<h3>" + challenge3Answer + "</h3>";
+document.getElementById("objChallenge3").innerHTML = "<h3>Challenge 3</h3>" + "<p>" + challenge3Answer + "</p>";
 
 // --------------------------------------
 // --Challenge 4-------------------------
@@ -101,8 +101,7 @@ for (i = 0; i < names.length; i++) {
   hulkSmash[names[i]] = ages[i];
 }
 
-document.getElementById("objChallenge4").innerHTML = "<h3>Challenge 4</h3>" +
-"<p>" + JSON.stringify(hulkSmash) + "</p>";
+document.getElementById("objChallenge4").innerHTML = "<h3>Challenge 4</h3>" + "<p>" + JSON.stringify(hulkSmash) + "</p>";
 
 // --------------------------------------
 // --Challenge 5-------------------------
@@ -128,4 +127,4 @@ var hireThem = false;
 if (candidate1.minSalary <= (job1.maxSalary * 0.90) ) {
   hireThem = true;
 }
-document.getElementById("objChallenge5").innerHTML = "<h3> Challenge 5: " + hireThem + "</h3>";
+document.getElementById("objChallenge5").innerHTML = "<h3>Challenge 5</h3>" + "<p>" + hireThem + "</p>";
